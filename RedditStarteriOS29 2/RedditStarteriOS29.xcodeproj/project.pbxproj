@@ -13,6 +13,10 @@
 		5884A8BE234E2F9700793C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884A8BD234E2F9700793C86 /* Assets.xcassets */; };
 		5884A8C1234E2F9700793C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884A8BF234E2F9700793C86 /* LaunchScreen.storyboard */; };
 		5884A8C4234E2F9700793C86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5884A8C3234E2F9700793C86 /* main.m */; };
+		FC0ECD00234E3EFE00AF96F4 /* BBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ECCFF234E3EFE00AF96F4 /* BBPost.m */; };
+		FC0ECD03234E435600AF96F4 /* BBPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ECD02234E435600AF96F4 /* BBPostController.m */; };
+		FCBE11B7234E568000781B10 /* BBPostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE11B6234E568000781B10 /* BBPostListTableViewController.swift */; };
+		FCBE11B9234E575500781B10 /* BBPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE11B8234E575500781B10 /* BBPostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		5884A8C0234E2F9700793C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884A8C2234E2F9700793C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5884A8C3234E2F9700793C86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC0ECCFE234E3EFE00AF96F4 /* BBPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPost.h; sourceTree = "<group>"; };
+		FC0ECCFF234E3EFE00AF96F4 /* BBPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBPost.m; sourceTree = "<group>"; };
+		FC0ECD01234E435600AF96F4 /* BBPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPostController.h; sourceTree = "<group>"; };
+		FC0ECD02234E435600AF96F4 /* BBPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBPostController.m; sourceTree = "<group>"; };
+		FCBE11B5234E567F00781B10 /* RedditStarteriOS29-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedditStarteriOS29-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCBE11B6234E568000781B10 /* BBPostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPostListTableViewController.swift; sourceTree = "<group>"; };
+		FCBE11B8234E575500781B10 /* BBPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBPostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,8 @@
 		5884A8CB234E317100793C86 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC0ECCFE234E3EFE00AF96F4 /* BBPost.h */,
+				FC0ECCFF234E3EFE00AF96F4 /* BBPost.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +113,8 @@
 		5884A8CD234E317F00793C86 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC0ECD01234E435600AF96F4 /* BBPostController.h */,
+				FC0ECD02234E435600AF96F4 /* BBPostController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -107,6 +122,8 @@
 		5884A8CF234E318E00793C86 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCBE11B6234E568000781B10 /* BBPostListTableViewController.swift */,
+				FCBE11B5234E567F00781B10 /* RedditStarteriOS29-Bridging-Header.h */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -131,6 +148,7 @@
 		5884A8D2234E31A500793C86 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCBE11B8234E575500781B10 /* BBPostTableViewCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -161,12 +179,13 @@
 		5884A8A6234E2F9200793C86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BB;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Darin Armstrong";
 				TargetAttributes = {
 					5884A8AD234E2F9200793C86 = {
 						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -206,9 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBE11B9234E575500781B10 /* BBPostTableViewCell.swift in Sources */,
 				5884A8B3234E2F9200793C86 /* AppDelegate.m in Sources */,
+				FC0ECD00234E3EFE00AF96F4 /* BBPost.m in Sources */,
 				5884A8C4234E2F9700793C86 /* main.m in Sources */,
 				5884A8B6234E2F9200793C86 /* SceneDelegate.m in Sources */,
+				FC0ECD03234E435600AF96F4 /* BBPostController.m in Sources */,
+				FCBE11B7234E568000781B10 /* BBPostListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -336,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -350,14 +373,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP48FW2MG5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DMA.RedditStarteriOS29;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BB.RedditStarteriOS29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditStarteriOS29/Controllers/View Controllers/RedditStarteriOS29-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,14 +395,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP48FW2MG5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DMA.RedditStarteriOS29;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BB.RedditStarteriOS29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditStarteriOS29/Controllers/View Controllers/RedditStarteriOS29-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
